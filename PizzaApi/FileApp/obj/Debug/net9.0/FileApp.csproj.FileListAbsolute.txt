@@ -1,0 +1,14 @@
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\bin\Debug\net9.0\FileApp.exe
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\bin\Debug\net9.0\FileApp.deps.json
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\bin\Debug\net9.0\FileApp.runtimeconfig.json
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\bin\Debug\net9.0\FileApp.dll
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\bin\Debug\net9.0\FileApp.pdb
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\obj\Debug\net9.0\FileApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\obj\Debug\net9.0\FileApp.AssemblyInfoInputs.cache
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\obj\Debug\net9.0\FileApp.AssemblyInfo.cs
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\obj\Debug\net9.0\FileApp.csproj.CoreCompileInputs.cache
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\obj\Debug\net9.0\FileApp.dll
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\obj\Debug\net9.0\refint\FileApp.dll
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\obj\Debug\net9.0\FileApp.pdb
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\obj\Debug\net9.0\FileApp.genruntimeconfig.cache
+C:\Users\rober\OneDrive\Documents\BYU Idaho\CSE325\PizzaApi\FileApp\obj\Debug\net9.0\ref\FileApp.dll

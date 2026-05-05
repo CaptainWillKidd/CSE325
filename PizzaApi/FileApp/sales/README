@@ -1,0 +1,169 @@
+# .NET Assignment – Build .NET Applications with C#
+
+## Overview
+
+This project was developed as part of the Microsoft Learn modules for building .NET applications using C#. It includes:
+
+* A RESTful Web API using ASP.NET Core (CRUD operations)
+* A file processing application that generates a sales summary report
+
+---
+
+## Part 1 – Web API (Pizza API)
+
+### Description
+
+A simple ASP.NET Core Web API that manages a list of pizzas and supports full CRUD operations.
+
+### Added Record (Requirement)
+
+An additional pizza was added to the list:
+
+* **Id:** 3
+* **Name:** Calabresa
+
+---
+
+### Endpoints and Test Results
+
+#### GET /pizzas
+
+* **Description:** Retrieve all pizzas
+* **Status Code:** 200 OK
+
+#### POST /pizzas
+
+* **Description:** Create a new pizza
+* **Example Request Body:**
+
+```json
+{
+  "name": "Chicken"
+}
+```
+
+* **Status Code:** 201 Created
+
+#### PUT /pizzas/{id}
+
+* **Description:** Update an existing pizza
+* **Status Code:** 204 No Content
+
+#### DELETE /pizzas/{id}
+
+* **Description:** Delete a pizza
+* **Status Code:** 204 No Content
+
+---
+
+## Part 2 – File and Directory Processing
+
+### Description
+
+A console application that reads multiple `.txt` files containing sales data and generates a summary report.
+
+---
+
+### Sales Summary Function
+
+```csharp
+using System.Text;
+
+public class SalesReport
+{
+    public static void GenerateSalesReport(string directoryPath)
+    {
+        var files = Directory.GetFiles(directoryPath, "*.txt");
+        decimal totalSales = 0;
+        var report = new StringBuilder();
+
+        report.AppendLine("Sales Summary");
+        report.AppendLine("----------------------------");
+
+        var details = new List<string>();
+
+        foreach (var file in files)
+        {
+            decimal fileTotal = 0;
+
+            foreach (var line in File.ReadAllLines(file))
+            {
+                if (decimal.TryParse(line, out decimal value))
+                {
+                    fileTotal += value;
+                }
+            }
+
+            totalSales += fileTotal;
+            details.Add($"{Path.GetFileName(file)}: {fileTotal:C}");
+        }
+
+        report.AppendLine($"Total Sales: {totalSales:C}");
+        report.AppendLine("\nDetails:");
+
+        foreach (var detail in details)
+        {
+            report.AppendLine(detail);
+        }
+
+        File.WriteAllText(Path.Combine(directoryPath, "SalesSummary.txt"), report.ToString());
+    }
+}
+```
+
+---
+
+### Example Output
+
+```
+Sales Summary
+----------------------------
+Total Sales: $3,500.00
+
+Details:
+file1.txt: $1,000.00
+file2.txt: $2,500.00
+```
+
+---
+
+## How to Run
+
+### Run the API
+
+```bash
+dotnet run
+```
+
+Then open:
+
+```
+http://localhost:{port}/swagger
+```
+
+---
+
+### Run the File App
+
+```bash
+dotnet run
+```
+
+---
+
+## Technologies Used
+
+* .NET 8 (LTS)
+* ASP.NET Core Web API
+* C#
+* Swagger (Swashbuckle)
+
+---
+
+## Notes
+
+* All endpoints were tested using Swagger UI
+* Status codes were verified for each operation
+* The project follows the requirements specified in the assignment
+
+---
