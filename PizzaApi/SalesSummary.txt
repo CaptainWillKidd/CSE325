@@ -1,0 +1,7 @@
+Sales Summary
+----------------------------
+Total Sales: R$ 421,05
+
+Details:
+4-05Sales.txt: R$ 144,40
+5-05Sales.txt: R$ 276,65
